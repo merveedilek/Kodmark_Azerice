@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = "alaqa";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container" style="width:70%; margin:auto">
+
+        <div id="about" class="section wb" style="padding-bottom:10px !important">
+            <div class="row mb-5" >
+                <img class="mobilAlaqa" src="~/Content/Kodmark/ekler/kodmarkcontact.png" style="text-align:center; margin:auto; width:50%" />
+            </div>
+        </div>
+    <div id="contact" class="section lb">
+
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="contact_form">
+                    <div id="message"></div>
+                    <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input class="form-control" id="name" type="text" placeholder="Adınız" required="required" data-validation-required-message="Zəhmət olmasa adınızı daxil edin.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" id="email" type="email" placeholder="Mailiniz" required="required" data-validation-required-message="Zəhmət olmasa elektron poçtunuzu daxil edin.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" id="phone" type="tel" placeholder="Telefonunuz">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div id="success"></div>
+                                <button id="sendMessageButton" class="hover-effect-new" data-text="Send Message" type="submit"><span> Göndər</span></button>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <textarea class="form-control" id="message" placeholder="Mesajınız" required="required" data-validation-required-message="Zəhmət olmasa mesajınızı əlavə edin."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                
+                                    
+                                
+                            </div>
+                            
+                            <div class="col-md-4 text-center" style="font-family:Tahoma">
+                                <h2>Əlaqə Məlumatları</h2>
+                                <p style="text-align:justify; padding-top:10px">
+                                    <h4 style="text-align:justify">
+                                        Kodmark Label Barkod Qablaşdırma sənayesi. ve Tic. Ltd. Sti.
+                                        Sanayi Mah. Ensar Cad. Xeyr: 35/3 Pendik / İstanbul
+                                    </h4>
+                                    <br />
+                                    <a href="mailto:#"> Mail: info@kodmark.com</a>
+                                    <br />
+                                    <a href="tel:#">  Tel: +90(216) 390 16 31 </a>
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </form>
+                    <div class="row">
+                        <div class="col-lg-12 col-xs-12 col-md-12" style="margin:auto; text-align:center">
+                            @*<iframe height="300" frameborder="0" style="border: 0px;margin-top:10px; width:100%" allowfullscreen="" src="https://www.google.com/maps/embed/v1/place?q=Kodmark+Etiket+Barkod+Ambalaj+San.+ve+Tic.+Ltd.+Şti.,+Pendik,+Turkey&amp;key=AIzaSyBf-p1uoNo-7lDr8UzCaEANuTDMPbniPuc"></iframe>*@
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.5347231500014!2d29.294634315410867!3d40.90402007931146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cadc9a51cfb7fb%3A0x31e2711c602b8089!2sKodmark%20Etiket%20Barkod%20Ambalaj%20San.%20ve%20Tic.%20Ltd.%20%C5%9Eti.!5e0!3m2!1saz!2str!4v1586888329776!5m2!1saz!2str" height="300" frameborder="0" style="border:0; margin-top:10px; width:100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</div><!-- end section -->
+
+
+
+

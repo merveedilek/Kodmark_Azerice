@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- Site Metas -->
+<title>KODMARK</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="~/Content/Kodmark/logo/icon.png" type="image/x-icon" />
+<link rel="apple-touch-icon" href="~/Content/images/apple-touch-icon.png">
+<link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="~/Content/css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="~/Content/css/style.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="~/Content/css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="~/Content/css/custom.css">
+<script src="~/Content/js/modernizr.js"></script> <!-- Modernizr -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body id="page-top" class="politics_version">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader-rd"></div>
+        <div class="loader-rd"></div>
+        <div class="loader-rd"></div>
+        <div class="loader-rd"></div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+    <header class="header">
+        <div class="burger">
+            <div class="burger__patty"></div>
+            <div class="burger__patty"></div>
+            <div class="burger__patty"></div>
+        </div>
+
+        <nav class="menu">
+            <div class="menu__brand">
+                <a href="/Home/Index"><div class="logo"><img class="img-fluid" src="~/Content/Kodmark/logo/kodmark_logo1.png" alt="" style="width:100%; height:auto" /></div></a>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    @Html.ActionLink("Anasayfa", "Index", "Home", new { @class = "menu__link" })
+                </li>
+                <li class="menu__item" onmouseover="myFunction('myDropdown')" onmouseout="myFunctionn('myDropdown')">
+                    <div class="dropdown">
+                        <a href="#" class="menu__link dropbtn">Təşkilati</a>
+                        <div id="myDropdown" style="left: 70px;" class="dropdown-content ">
+                            <a href="/Home/About">Haqqımızda</a>
+                            <a href="/Home/Missia">Vizyon, Missiya və Dəyərlərimiz</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="menu__item" onmouseover="myFunction('myDropdown2')" onmouseout="myFunctionn('myDropdown2')">
+                    <div class="dropdown ">
+                        <a href="#" class="menu__link dropbtn kapat">Printerlər</a>
+                        <div id="myDropdown2" style="left: 70px;" class="dropdown-content ">
+                            <a href="/Home/SənayeYazıcılar">Sənaye Printerləri </a>
+                            <a href="/Home/MasaustuYazıcılar">Masaüstü Barkod Printerlər</a>
+                            <a href="/Home/MobilYazıcılar">Mobil Barkod Printerlər</a>
+                            <a href="/Home/BarkodAksesuarları">Barkod Printer Aksessuarları</a>
+
+                        </div>
+                    </div>
+                </li>
+
+                <li class="menu__item" onmouseover="myFunction('myDropdown1')" onmouseout="myFunctionn('myDropdown1')">
+                    <div class="dropdown">
+                        <a href="#" class="menu__link dropbtn">Məhsullar</a>
+                        <div id="myDropdown1" class="dropdown-content " >
+                            @Html.ActionLink("Çap Olunmuş Etiketlər", "CapOlunmusEtiket", "Home")
+                            @Html.ActionLink("Yazılmamış Etiketlər", "YazılmamısEtiket", "Home")
+                            @Html.ActionLink("Lent Növləri", "LentNövlari", "Home")
+
+                        </div>
+                    </div>
+                </li>
+
+                <li class="menu__item"><a href="/Home/BarkodOxucular" class="menu__link">Barkod Oxucular</a></li>
+
+
+                <li class="menu__item"><a href="/Home/alaqa" class="menu__link">Əlaqə</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container-fluid">
+            <a class="navbar-brand js-scroll-trigger" href="/Home/Index">
+                <img class="img-fluid" src="~/Content/Kodmark/logo/kodmark_logo1.png" style="width:50%; height:auto" alt="" />
+            </a>
+        </div>
+    </nav>
+    @RenderBody()
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="mb-3 img-logo">
+                        <a href="/Home/Index">
+                            <img src="~/Content/Kodmark/logo/kodmark_logo1.png" class="mobilLogo" alt="" style="width:100%; height:auto">
+                        </a>
+                     
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h4 class="mb-4 ph-fonts-style foot-title">
+                        Səhifələr
+                    </h4>
+                    <p class="ph-links-column">
+                        <a href="#" class="text-black">Haqqımızda</a>
+                        <a href="#" class="text-black">Məhsullar</a>
+                        <a href="#" class="text-black">Yazıcılar</a>
+                        <a href="#" class="text-black">Barkod Oxucular</a>
+                        <a href="#" class="text-black">Əlaqə</a>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h4 class="mb-4 ph-fonts-style foot-title">
+                        Kateqoriyalar
+                    </h4>
+                    <p class="ph-links-column">
+                        <a href="/Home/CapOlunmusEtiket" class="text-black">Çap Olunmuş Etiketlər</a>
+                        <a href="/Home/YazılmamısEtiket" class="text-black">Yazılmamış Etiketlər</a>
+                        <a href="/Home/LentNövlari" class="text-black">Lent Növləri</a>
+                        <a href="/Home/SənayeYazıcılar" class="text-black">Sənaye Barkod Yazıcıları</a>
+                        <a href="/Home/MasaustuYazıcılar" class="text-black">Masaüstü Barkod Yazıcıları</a>
+                        <a href="/Home/MobilYazıcılar" class="text-black">Mobil Barkod Yazıcıları</a>
+                        <a href="/Home/BarkodAksesuarları" class="text-black">Barkod Yazıcı Aksessuarları</a>
+
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h4 class="mb-4 ph-fonts-style foot-title">
+                        Əlaqə Məlumatları
+                    </h4>
+                    <p class="ph-fonts-style_p">
+                        Kodmark Label Barkod Qablaşdırma sənayesi. ve Tic. Ltd. Sti.
+                        <br />
+                        Sanayi Mah. Ensar Cad. Xeyr: 35/3 Pendik / İstanbul
+                        <br />
+                        <a href="mailto:#" style="color:white">Mail: info@kodmark.com</a>
+                        <br />
+                        <a href="tel:#" style="color:white">Tel: +90(216) 390 16 31</a>
+                    </p>
+                   
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">
+                    <p class="footer-company-name">
+                        &copy; KODMARK 2020</a>
+                    </p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+   
+    <!-- ALL JS FILES -->
+    <script src="~/Content/js/all.js"></script>
+    <!-- Camera Slider -->
+    <script src="~/Content/js/jquery.mobile.customized.min.js"></script>
+    <script src="~/Content/js/jquery.easing.1.3.js"></script>
+    <script src="~/Content/js/parallaxie.js"></script>
+    <script src="~/Content/js/jquery.appear.min.js"></script>
+    <script src="~/Content/js/skill.bars.jquery.js"></script>
+    <script src="~/Content/js/responsiveslides.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="~/Content/js/jqBootstrapValidation.js"></script>
+    <script src="~/Content/js/contact_me.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="~/Content/js/jquery.fatNav.min.js"></script>
+    <script src="~/Content/js/menu-overlay.js"></script>
+    <script src="~/Content/js/custom.js"></script>
+    <script src="~/Content/js/zepto.min.js"></script>
+    <script src="~/Content/js/images-loded.min.js"></script>
+    <script src="~/Content/js/slider.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction(x) {
+            document.getElementById(x).classList.add("show");
+        }
+        function myFunctionn(x) {
+          
+            document.getElementById(x).classList.remove("show");
+        }
+
+       
+    </script>
+</body>
+</html>

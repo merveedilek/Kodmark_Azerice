@@ -1,0 +1,411 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E1517B38-C6C4-44C0-B928-4E1DFEFDE963}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kodmark_Azerice</RootNamespace>
+    <AssemblyName>Kodmark_Azerice</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44343</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\animate.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\camera.css" />
+    <Content Include="Content\css\custom.css" />
+    <Content Include="Content\css\flaticon.css" />
+    <Content Include="Content\css\font-awesome.css" />
+    <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\css\jquery.fatNav.min.css" />
+    <Content Include="Content\css\jquery.gmaps.css" />
+    <Content Include="Content\css\owl.carousel.css" />
+    <Content Include="Content\css\prettyPhoto.css" />
+    <Content Include="Content\css\responsive.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\css\versions.css" />
+    <Content Include="Content\fonts\Flaticon.svg" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\images\ajax-loader.gif" />
+    <Content Include="Content\images\apple-touch-icon.png" />
+    <Content Include="Content\images\bg.png" />
+    <Content Include="Content\images\country-quilt-dark.png" />
+    <Content Include="Content\images\favicon.ico" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\logo2.png" />
+    <Content Include="Content\images\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="Content\images\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="Content\images\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="Content\images\prettyPhoto\dark_rounded\default_thumbnail.gif" />
+    <Content Include="Content\images\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="Content\images\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="Content\images\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="Content\images\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="Content\images\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="Content\images\prettyPhoto\dark_square\default_thumbnail.gif" />
+    <Content Include="Content\images\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="Content\images\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="Content\images\prettyPhoto\default\default_thumb.png" />
+    <Content Include="Content\images\prettyPhoto\default\loader.gif" />
+    <Content Include="Content\images\prettyPhoto\default\sprite.png" />
+    <Content Include="Content\images\prettyPhoto\default\sprite_next.png" />
+    <Content Include="Content\images\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="Content\images\prettyPhoto\default\sprite_x.png" />
+    <Content Include="Content\images\prettyPhoto\default\sprite_y.png" />
+    <Content Include="Content\images\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="Content\images\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="Content\images\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="Content\images\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="Content\images\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="Content\images\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="Content\images\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="Content\images\prettyPhoto\facebook\loader.gif" />
+    <Content Include="Content\images\prettyPhoto\facebook\sprite.png" />
+    <Content Include="Content\images\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="Content\images\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="Content\images\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="Content\images\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="Content\images\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="Content\images\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="Content\images\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="Content\images\prettyPhoto\light_square\default_thumbnail.gif" />
+    <Content Include="Content\images\prettyPhoto\light_square\loader.gif" />
+    <Content Include="Content\images\prettyPhoto\light_square\sprite.png" />
+    <Content Include="Content\js\all.js" />
+    <Content Include="Content\js\animate.js" />
+    <Content Include="Content\js\contact_me.js" />
+    <Content Include="Content\js\custom.js" />
+    <Content Include="Content\js\headline.js" />
+    <Content Include="Content\js\hoverdir.js" />
+    <Content Include="Content\js\images-loded.min.js" />
+    <Content Include="Content\js\imagesloaded.pkgd.min.js" />
+    <Content Include="Content\js\isotope.min.js" />
+    <Content Include="Content\js\jqBootstrapValidation.js" />
+    <Content Include="Content\js\jquery.appear.min.js" />
+    <Content Include="Content\js\jquery.easing.1.3.js" />
+    <Content Include="Content\js\jquery.fatNav.min.js" />
+    <Content Include="Content\js\jquery.gmaps.js" />
+    <Content Include="Content\js\jquery.prettyPhoto.js" />
+    <Content Include="Content\js\main.js" />
+    <Content Include="Content\js\map.js" />
+    <Content Include="Content\js\menu-overlay.js" />
+    <Content Include="Content\js\modernizr.js" />
+    <Content Include="Content\js\owl.carousel.js" />
+    <Content Include="Content\js\parallaxie.js" />
+    <Content Include="Content\js\portfolio.js" />
+    <Content Include="Content\js\retina.js" />
+    <Content Include="Content\js\scroll.js" />
+    <Content Include="Content\js\slider.js" />
+    <Content Include="Content\js\zepto.min.js" />
+    <Content Include="Content\Kodmark\aboutGorsel.png" />
+    <Content Include="Content\Kodmark\aboutGorsel2.png" />
+    <Content Include="Content\Kodmark\Anasayfa\accessories.jpg" />
+    <Content Include="Content\Kodmark\Anasayfa\ev4t.png" />
+    <Content Include="Content\Kodmark\Anasayfa\kozmetik.jpg" />
+    <Content Include="Content\Kodmark\Anasayfa\okuyucu1.jpg" />
+    <Content Include="Content\Kodmark\Anasayfa\qln.jpg" />
+    <Content Include="Content\Kodmark\Anasayfa\silvermat.jpg" />
+    <Content Include="Content\Kodmark\Anasayfa\toshiba.jpg" />
+    <Content Include="Content\Kodmark\Anasayfa\waxResin2.jpg" />
+    <Content Include="Content\Kodmark\barkodaksesuaları\apf.jpg" />
+    <Content Include="Content\Kodmark\barkodaksesuaları\apn.jpg" />
+    <Content Include="Content\Kodmark\barkodaksesuaları\godex.png" />
+    <Content Include="Content\Kodmark\barkodaksesuaları\towa.jpg" />
+    <Content Include="Content\Kodmark\barkodOxucu\ccd.jpg" />
+    <Content Include="Content\Kodmark\barkodOxucu\coklulazer.jpg" />
+    <Content Include="Content\Kodmark\barkodOxucu\endustriyel.jpg" />
+    <Content Include="Content\Kodmark\barkodOxucu\imager.png" />
+    <Content Include="Content\Kodmark\barkodOxucu\kablosuz.jpg" />
+    <Content Include="Content\Kodmark\barkodOxucu\karekod.jpg" />
+    <Content Include="Content\Kodmark\barkodOxucu\manyetik.jpg" />
+    <Content Include="Content\Kodmark\barkodOxucu\teklilazer.jpg" />
+    <Content Include="Content\Kodmark\capolunmus\ambalaj.jpg" />
+    <Content Include="Content\Kodmark\capolunmus\demir çeliki.jpg" />
+    <Content Include="Content\Kodmark\capolunmus\gidaetiket.jpg" />
+    <Content Include="Content\Kodmark\capolunmus\gidaetiketi1.jpg" />
+    <Content Include="Content\Kodmark\capolunmus\kimyaetiketi.jpg" />
+    <Content Include="Content\Kodmark\capolunmus\koli.jpg" />
+    <Content Include="Content\Kodmark\capolunmus\kozmetik.jpg" />
+    <Content Include="Content\Kodmark\capolunmus\madeni yağ etiketi.jpg" />
+    <Content Include="Content\Kodmark\capolunmus\tekstiletiketi.jpg" />
+    <Content Include="Content\Kodmark\capolunmus\temizlikurun.jpg" />
+    <Content Include="Content\Kodmark\ekler\barkod.png" />
+    <Content Include="Content\Kodmark\ekler\kodmarkcontact.png" />
+    <Content Include="Content\Kodmark\ekler\lent.png" />
+    <Content Include="Content\Kodmark\ekler\masaüstü.png" />
+    <Content Include="Content\Kodmark\ekler\mobil.png" />
+    <Content Include="Content\Kodmark\ekler\okşayıcı.png" />
+    <Content Include="Content\Kodmark\ekler\sanaye.png" />
+    <Content Include="Content\Kodmark\ekler\yazılmamış.png" />
+    <Content Include="Content\Kodmark\ekler\çap.png" />
+    <Content Include="Content\Kodmark\endustriyel\endüstriyel.jpg" />
+    <Content Include="Content\Kodmark\endustriyel\toshiba.jpg" />
+    <Content Include="Content\Kodmark\haqqimizda.jpg" />
+    <Content Include="Content\Kodmark\Lent\hotfoil.jpg" />
+    <Content Include="Content\Kodmark\Lent\hotfoil3.jpg" />
+    <Content Include="Content\Kodmark\Lent\near edge.jpg" />
+    <Content Include="Content\Kodmark\Lent\nearEdge.png" />
+    <Content Include="Content\Kodmark\Lent\renkliribon2.jpg" />
+    <Content Include="Content\Kodmark\Lent\resin2.png" />
+    <Content Include="Content\Kodmark\Lent\wax ribon.jpg" />
+    <Content Include="Content\Kodmark\Lent\wax2.jpg" />
+    <Content Include="Content\Kodmark\Lent\waxResin2.jpg" />
+    <Content Include="Content\Kodmark\logo\degerlerimiz.png" />
+    <Content Include="Content\Kodmark\logo\icon.png" />
+    <Content Include="Content\Kodmark\logo\kodmark_logo1.png" />
+    <Content Include="Content\Kodmark\logo\misyon.png" />
+    <Content Include="Content\Kodmark\logo\vizyon.png" />
+    <Content Include="Content\Kodmark\Masaustu\argox.jpg" />
+    <Content Include="Content\Kodmark\Masaustu\ev4t.png" />
+    <Content Include="Content\Kodmark\Masaustu\fvt.jpg" />
+    <Content Include="Content\Kodmark\Masaustu\zebragc.png" />
+    <Content Include="Content\Kodmark\mobil\argoxmobil.jpg" />
+    <Content Include="Content\Kodmark\mobil\ep4.jpg" />
+    <Content Include="Content\Kodmark\mobil\imz.jpg" />
+    <Content Include="Content\Kodmark\mobil\qln.jpg" />
+    <Content Include="Content\Kodmark\slides\1s.jpg" />
+    <Content Include="Content\Kodmark\slides\2s.JPG" />
+    <Content Include="Content\Kodmark\slides\3s.jpg" />
+    <Content Include="Content\Kodmark\slides\4s.JPG" />
+    <Content Include="Content\Kodmark\slides\5s.JPG" />
+    <Content Include="Content\Kodmark\slides\6s.jpg" />
+    <Content Include="Content\Kodmark\slides\7s.jpg" />
+    <Content Include="Content\Kodmark\yazılmamıs\fasty1.jpg" />
+    <Content Include="Content\Kodmark\yazılmamıs\floresan1.jpg" />
+    <Content Include="Content\Kodmark\yazılmamıs\kuse1.png" />
+    <Content Include="Content\Kodmark\yazılmamıs\kuyumcu1.png" />
+    <Content Include="Content\Kodmark\yazılmamıs\kırılgan1.jpg" />
+    <Content Include="Content\Kodmark\yazılmamıs\pp opak etiket.jpg" />
+    <Content Include="Content\Kodmark\yazılmamıs\silvermat.jpg" />
+    <Content Include="Content\Kodmark\yazılmamıs\termal1.png" />
+    <Content Include="Content\Kodmark\yazılmamıs\vellum2.png" />
+    <Content Include="Content\Kodmark\yazılmamıs\yemvecuval.jpg" />
+    <Content Include="Content\mail\contact_me.php" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\uploads\1.png" />
+    <Content Include="Content\uploads\2.png" />
+    <Content Include="Content\uploads\3.png" />
+    <Content Include="Content\uploads\5.png" />
+    <Content Include="Content\uploads\6.png" />
+    <Content Include="Content\uploads\7.png" />
+    <Content Include="Content\uploads\8.png" />
+    <Content Include="Content\uploads\about_01.jpg" />
+    <Content Include="Content\uploads\about_02.jpg" />
+    <Content Include="Content\uploads\about_03.jpg" />
+    <Content Include="Content\uploads\banner-01.jpg" />
+    <Content Include="Content\uploads\banner-02.jpg" />
+    <Content Include="Content\uploads\banner-03.jpg" />
+    <Content Include="Content\uploads\banner-04.jpg" />
+    <Content Include="Content\uploads\blog-01.jpg" />
+    <Content Include="Content\uploads\blog-02.jpg" />
+    <Content Include="Content\uploads\blog-03.jpg" />
+    <Content Include="Content\uploads\building-sprite-2.png" />
+    <Content Include="Content\uploads\building-sprite.png" />
+    <Content Include="Content\uploads\gallery_img-01.jpg" />
+    <Content Include="Content\uploads\gallery_img-02.jpg" />
+    <Content Include="Content\uploads\gallery_img-03.jpg" />
+    <Content Include="Content\uploads\gallery_img-04.jpg" />
+    <Content Include="Content\uploads\gallery_img-05.jpg" />
+    <Content Include="Content\uploads\gallery_img-06.jpg" />
+    <Content Include="Content\uploads\gallery_img-07.jpg" />
+    <Content Include="Content\uploads\gallery_img-08.jpg" />
+    <Content Include="Content\uploads\gallery_img-09.jpg" />
+    <Content Include="Content\uploads\inner-bg.jpg" />
+    <Content Include="Content\uploads\nav-bg.jpg" />
+    <Content Include="Content\uploads\reviews-bg.jpg" />
+    <Content Include="Content\uploads\testi_01.jpg" />
+    <Content Include="Content\uploads\testi_02.jpg" />
+    <Content Include="Content\uploads\testi_03.jpg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\fonts\Flaticon.eot" />
+    <Content Include="Content\fonts\Flaticon.ttf" />
+    <Content Include="Content\fonts\Flaticon.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Missia.cshtml" />
+    <Content Include="Views\Home\CapOlunmusEtiket.cshtml" />
+    <Content Include="Views\Home\YazılmamısEtiket.cshtml" />
+    <Content Include="Views\Home\LentNövlari.cshtml" />
+    <Content Include="Views\Home\SənayeYazıcılar.cshtml" />
+    <Content Include="Views\Home\MasaustuYazıcılar.cshtml" />
+    <Content Include="Views\Home\MobilYazıcılar.cshtml" />
+    <Content Include="Views\Home\BarkodAksesuarları.cshtml" />
+    <Content Include="Views\Home\BarkodOxucular.cshtml" />
+    <Content Include="Views\Home\alaqa.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51073</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44343/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
